@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Add to Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Store</h1>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product" data-id="0">
+                <div class="product-image">
+                    <img src="/storage/emulated/0/Download/491e2dd5e0d1466f8ee5b0cd010451ae.webp" alt="Wireless Headphones">
+                </div>
+                <div class="product-details">
+                    <h2>JBL Wireless Headphones</h2>
+                    <p class="description">High-quality wireless headphones with noise cancellation, long battery life, and premium sound.</p>
+                    <p class="price">₱1500.00</p>
+                    <div class="quantity">
+                        <label for="quantity-0">Quantity:</label>
+                        <input type="number" id="quantity-0" value="1" min="1" max="10">
+                    </div>
+                    <button class="add-to-cart" data-id="0">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product" data-id="1">
+                <div class="product-image">
+                    <img src="/storage/emulated/0/Download/download.jpeg" alt="Smartphone">
+                </div>
+                <div class="product-details">
+                    <h2>Iphone 14 pro max</h2>
+                    <p class="description">Latest smartphone with advanced camera, fast processor, and all-day battery.</p>
+                    <p class="price">₱25,500.00</p>
+                    <div class="quantity">
+                        <label for="quantity-1">Quantity:</label>
+                        <input type="number" id="quantity-1" value="1" min="1" max="10">
+                    </div>
+                    <button class="add-to-cart" data-id="1">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product" data-id="2">
+                <div class="product-image">
+                    <img src="/storage/emulated/0/Download/asus-tuf-gaming-f15.webp" alt="Laptop">
+                </div>
+                <div class="product-details">
+                    <h2>Asus TUF Gaming Laptop</h2>
+                    <p class="description">Powerful laptop for work and gaming with high-resolution display and SSD storage.</p>
+                    <p class="price">₱34,990.00</p>
+                    <div class="quantity">
+                        <label for="quantity-2">Quantity:</label>
+                        <input type="number" id="quantity-2" value="1" min="1" max="10">
+                    </div>
+                    <button class="add-to-cart" data-id="2">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product" data-id="3">
+                <div class="product-image">
+                    <img src="/storage/emulated/0/Download/193156_2024_1 (1).jpg" alt="Smartwatch">
+                </div>
+                <div class="product-details">
+                    <h2>Samsung Galaxy Watch 7</h2>
+                    <p class="description">Fitness-focused smartwatch with heart rate monitor, GPS, and water resistance.</p>
+                    <p class="price">₱16,990.00</p>
+                    <div class="quantity">
+                        <label for="quantity-3">Quantity:</label>
+                        <input type="number" id="quantity-3" value="1" min="1" max="10">
+                    </div>
+                    <button class="add-to-cart" data-id="3">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <aside class="cart">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₱0.00</p>
+            <button id="checkout">Checkout</button>
+        </aside>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
